@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PacMac</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="wrap">
+      <header class="hud">
+        <div class="hud__left">
+          <div><strong>Score:</strong> <span id="score">0</span></div>
+          <div><strong>Lives:</strong> <span id="lives">3</span></div>
+        </div>
+        <div class="hud__right">
+          <div class="hint">Move: Arrow Keys | Restart: R</div>
+        </div>
+      </header>
+
+      <section class="stage">
+        <canvas id="game" width="520" height="520" aria-label="PacMac game canvas"></canvas>
+        <div id="overlay" class="overlay" role="status" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <script src="./game.js"></script>
+  </body>
+</html>
